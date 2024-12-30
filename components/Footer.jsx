@@ -181,7 +181,7 @@ const footerData = [
 ];
 const Footer = () => {
   return (
-    <footer className="bottom-0 flex flex-col gap-10 justify-center items-center w-full xl:px-16 lg:px-12 md:px-10 px-5">
+    <footer className="bottom-0 flex flex-col gap-10 justify-center items-center w-full xl:px-16 lg:px-12 md:px-10 px-5 pb-[50px]">
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 w-full justify-between lg:gap-10 md:gap-7 gap-5">
         {footerData.map((fd, idx) => (
           <div key={idx} className="flex flex-col gap-3">
