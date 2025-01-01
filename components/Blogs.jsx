@@ -55,7 +55,7 @@ const Blogs = () => {
     tl.fromTo(
       "#blogs-headings > *",
       { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }
+      { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut", delay: 0.7 }
     )
       .fromTo(
         "#blogs-p",

@@ -56,7 +56,7 @@ const Features = () => {
     tl.fromTo(
       "#features-cont > h2",
       { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }
+      { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut", delay: 1 }
     )
       .fromTo(
         "#features-cont > h1",

@@ -41,7 +41,7 @@ const AdvancedFeatures = () => {
     tl.fromTo(
       "#features-btn",
       { y: 100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }
+      { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut", delay: 0.7 }
     )
       .fromTo(
         "#adv-features-cont > h1",
@@ -55,13 +55,13 @@ const AdvancedFeatures = () => {
       )
       .fromTo(
         "#adv-features-desktop-image",
-        { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }
+        { z: 200, opacity: 0, scale: 0.8 },
+        { z: 0, opacity: 1, scale: 1, duration: 0.7, ease: "power3.out" }
       )
       .fromTo(
         "#adv-features-mobile-image",
-        { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }
+        { z: 200, opacity: 0, scale: 0.8 },
+        { z: 0, opacity: 1, scale: 1, duration: 0.7, ease: "power3.out" }
       )
       .fromTo(
         "#adv-features > *",
@@ -105,12 +105,12 @@ const AdvancedFeatures = () => {
       </div>
       <div
         id="adv-features"
-        className="mt-10 w-full flex md:flex-row flex-col flex-wrap gap-5 justify-between items-center"
+        className="mt-10 w-full flex md:flex-row flex-col flex-wrap gap-5 justify-center items-center"
       >
         {AdvancedFeaturesData.map((f, idx) => (
           <div
             key={idx}
-            className="w-full md:w-[300px] lg:w-[350px] h-auto flex flex-col justify-center items-center gap-[16px]"
+            className="w-full md:w-[300px] lg:w-[350px] h-auto flex flex-col justify-between items-center gap-[16px]"
           >
             <div className="flex flex-col justify-center items-center gap-[16px]">
               <div className="border border-[#EAECF0] rounded-md bg-white p-3 drop-shadow-sm">

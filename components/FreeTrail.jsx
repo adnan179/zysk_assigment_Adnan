@@ -16,7 +16,7 @@ const FreeTrail = () => {
     tl.fromTo(
       "#free-trail-cont > h1",
       { y: 150, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }
+      { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut", delay: 0.6 }
     )
       .fromTo(
         "#free-trail-cont > p",

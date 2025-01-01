@@ -7,34 +7,51 @@ import heroImageDesktop from "../public/images/hero-image.png";
 import gsap from "gsap";
 
 const Hero = () => {
+  //gsap animations
   useEffect(() => {
     const tl = gsap.timeline();
+
     tl.fromTo(
       "#new-feature-btn",
-      { y: -100, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut", delay: 0.5 }
+      { z: 200, opacity: 0, scale: 0.8 },
+      {
+        z: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 0.7,
+        ease: "power3.out",
+        delay: 0.5,
+      }
     )
       .fromTo(
         "#hero-heading",
-        { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }
+        { z: 200, opacity: 0, scale: 0.8 },
+        { z: 0, opacity: 1, scale: 1, duration: 0.7, ease: "power3.out" }
       )
       .fromTo(
         "#hero-sub-heading",
-        { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }
+        { z: 200, opacity: 0, scale: 0.8 },
+        { z: 0, opacity: 1, scale: 1, duration: 0.7, ease: "power3.out" }
       )
       .fromTo(
         "#hero-btns > *",
-        { y: -100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.3, ease: "power3.inOut", stagger: 0.3 }
+        { z: 200, opacity: 0, scale: 0.8 },
+        {
+          z: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 0.5,
+          ease: "power3.out",
+          stagger: 0.3,
+        }
       )
       .fromTo(
         "#hero-image",
-        { y: 100, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.5, ease: "power3.inOut" }
+        { z: 200, opacity: 0, scale: 0.8 },
+        { z: 0, opacity: 1, scale: 1, duration: 0.7, ease: "power3.out" }
       );
   }, []);
+
   return (
     <section className="w-full mt-[50px]">
       {/* hero-content */}

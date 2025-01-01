@@ -12,8 +12,10 @@ export default function Home() {
     <div className="w-full h-full xl:px-16 lg:px-12 md:px-10 px-5">
       <Hero />
       <Companies />
-      <Features />
-      <Sisyphus />
+      <div className="flex md:flex-col flex-col-reverse">
+        <Sisyphus />
+        <Features />
+      </div>
       <AdvancedFeatures />
       <FrequentlyAsked />
       <Blogs />
